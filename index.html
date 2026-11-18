@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tóm tắt nội dung học hôm nay về thiết kế web responsive và bài thực hành.">
+    <title>Nội dung học hôm nay</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: #f1f5f9;
+        color: #172033;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      main {
+        width: min(100%, 720px);
+        padding: 36px;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 12px 36px rgb(15 23 42 / 10%);
+      }
+      .eyebrow { color: #2563eb; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+      h1 { margin: 8px 0 12px; line-height: 1.2; }
+      h2 { margin: 28px 0 8px; font-size: 1.15rem; }
+      ul { padding-left: 22px; }
+      .assignment {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 18px;
+        border-radius: 9px;
+        background: #2563eb;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .assignment:hover, .assignment:focus-visible { background: #1d4ed8; }
+      @media (max-width: 520px) { main { padding: 25px 21px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Bài học hôm nay</p>
+      <h1>Thiết kế giao diện web responsive</h1>
+      <p>Hôm nay chúng ta thực hành cách bố trí các phần tử trên trang và điều chỉnh giao diện để phù hợp với nhiều kích thước màn hình.</p>
+
+      <h2>Nội dung đã học</h2>
+      <ul>
+        <li>Dùng CSS float và độ rộng phần trăm để chia bố cục thành hai cột.</li>
+        <li>Dùng media query để chuyển bố cục thành một cột trên màn hình nhỏ.</li>
+        <li>Ẩn một phần nội dung ở một số kích thước màn hình và khi in trang.</li>
+      </ul>
+
+      <h2>Bài thực hành</h2>
+      <p>Mở bài thực hành responsive với hai vùng nội dung LEFT và RIGHT:</p>
+      <a class="assignment" href="Bai1.html">Xem bài thực hành Bai1</a>
+    </main>
+  </body>
+</html>
